@@ -1,4 +1,4 @@
-using Revise, Triangulate, ApproxOperator, CairoMakie
+using Revise, ApproxOperator, CairoMakie
 
 tri_elms, points = ApproxOperator.importmsh("./msh/test.msh")
 vor_elms, nodes = ApproxOperator.voronoimsh("./msh/test.msh")

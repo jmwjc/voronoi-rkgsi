@@ -1,0 +1,6 @@
+["RegularGrid"]
+"n"=2
+"γ"=5
+["Ω"]
+type="ReproducingKernel{:Quadratic2D,:□,:CubicSpline,:Vor2}"
+"𝓒".tag="Ω"
