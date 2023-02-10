@@ -1,6 +1,17 @@
 ["RegularGrid"]
 "n"=2
 "γ"=5
+
 ["Ω"]
 type="ReproducingKernel{:Quadratic2D,:□,:CubicSpline,:Vor2}"
 "𝓒".tag="Ω"
+"𝓒".type="Node"
+"𝓖".type="SegRK3"
+"𝓖"."𝝭"="𝝭"
+
+["Ω̃"]
+type="ReproducingKernel{:Quadratic2D,:□,:CubicSpline,:Vor2}"
+"𝓒".tag="Ω"
+"𝓒".type="Node"
+"𝓖".type="Node"
+"𝓖"."𝝭"="∇̃ᵥ₂𝝭"
