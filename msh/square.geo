@@ -1,6 +1,6 @@
 
 a = 1.0;
-n = 20;
+n = 10;
 c = a/n;
 
 Point(1) = {0.0, 0.0, 0.0, c};
@@ -17,8 +17,8 @@ Curve Loop(1) = {1,2,3,4};
 
 Plane Surface(1) = {1};
 
-Physical Curve("Γᵍ") = {1,2,3,4};
-Physical Curve("Γᵗ") = {};
+Physical Curve("Γᵍ") = {1,4};
+Physical Curve("Γᵗ") = {2,3};
 Physical Surface("Ω") = {1};
 
 // Mesh.CharacteristicLength = c;
