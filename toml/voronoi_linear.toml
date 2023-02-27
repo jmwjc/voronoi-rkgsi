@@ -7,7 +7,7 @@ type="ReproducingKernel{:Linear2D,:○,:CubicSpline,:Vor2}"
 "𝓒".tag="Ω"
 "𝓒".type="Node"
 "𝓖".type="SegRK2"
-"𝓖"."𝝭"="𝝭"
+"𝓖"."𝝭"="∇𝝭ₕ"
 
 ["Ω̃"]
 type="ReproducingKernel{:Linear2D,:○,:CubicSpline,:Vor2}"
