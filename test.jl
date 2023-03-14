@@ -13,13 +13,12 @@ push!(nodes, :s => s)
 
 ApproxOperator.set𝑤ᵣₖ!(elements["Ω̃"],nodes)
 
-"""
-plot ith element integration points
-red circle: support
-red cross: boundary integration points
-blue xcross: domain integration points
-green star: centroid
-"""
+
+# plot ith element integration points
+# red circle: support
+# red cross: boundary integration points
+# blue xcross: domain integration points
+# green star: centroid
 
 f = Figure()
 
@@ -77,9 +76,7 @@ scatter!(x,y,
     color = :blue
 )
 
-"""
 ## centroid
-"""
 x = [elm.𝓖[1].xₘ for elm in elements["Ω̃"]]
 y = [elm.𝓖[1].yₘ for elm in elements["Ω̃"]]
 scatter!(x,y, 
@@ -116,12 +113,11 @@ e20 = m₂₀/𝐴 - 𝓖[1].m₂₀
 e11 = m₁₁/𝐴 - 𝓖[1].m₁₁
 e02 = m₀₂/𝐴 - 𝓖[1].m₀₂
 
-"""
 # check consistency condition
-"""
-set𝝭!(elements["Ω"])
-set𝝭!(elements["Ω̃"])
-set∇̃𝝭!(elements["Ω̃"],elements["Ω"])
-cc = check∇₂𝝭(elements["Ω̃"])
+
+# set𝝭!(elements["Ω"])
+# set𝝭!(elements["Ω̃"])
+# set∇̃𝝭!(elements["Ω̃"],elements["Ω"])
+# cc = check∇₂𝝭(elements["Ω̃"])
 # cc = check𝝭(elements["Ω"][i:i])
-f
+# f

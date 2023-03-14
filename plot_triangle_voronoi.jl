@@ -1,7 +1,7 @@
 using Revise, ApproxOperator, CairoMakie
 
-tri_elms, points = ApproxOperator.importmsh("./msh/test.msh")
-vor_elms, nodes = ApproxOperator.voronoimsh("./msh/test.msh")
+tri_elms, points = ApproxOperator.importmsh("./msh/test_4.msh")
+vor_elms, nodes = ApproxOperator.voronoimsh("./msh/test_4.msh")
 
 set𝓖!(vor_elms["Ω"],:SegGI1)
 
